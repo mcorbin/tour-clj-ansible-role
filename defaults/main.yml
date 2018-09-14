@@ -14,3 +14,5 @@ tour_config_path: "/etc/tour-clj.yml"
 tour_port: 8080
 
 tour_host: 127.0.0.1
+
+tour_java_memory: 300m

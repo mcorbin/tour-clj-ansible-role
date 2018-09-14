@@ -6,7 +6,7 @@ After=network.target
 User={{ tour_user }}
 Environment=CONFIG_PATH={{ tour_config_path }}
 Group={{ tour_user }}
-ExecStart=/usr/bin/java -jar {{ tour_jar_path }}
+ExecStart=/usr/bin/java -Xms{{ tour_java_memory }} -Xmx{{ tour_java_memory }} -jar {{ tour_jar_path }}
 Restart=on-failure
 
 [Install]
